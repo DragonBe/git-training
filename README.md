@@ -2,30 +2,29 @@
 
 ## Creating a new branch
 
-Ga naar de repository
-Fork de originele repository
-Ga naar de fork in je eigen github profiel
-Kopieer de link van de Fork
+Go to the repository
+Fork the original repository
+Go to the fork in your own gitHub profile
+Copy the link of the fork
 
 ```
-git clone <link van fork>
+git clone <link of fork>
 git checkout -b <BranchName>
 git add <filename>
-git commit -m "Voeg hier je commentaar toe"
+git commit -m "Add comments of the changes"
 ```
 
-Indien je een merge conflict hebt :
-(zorg dat de usptream correct is) 
+In case of a merge conflict:
+(Make sure the upstream is correct) 
 ```
-git remote add upstream <link naar originele repo>
+git remote add upstream <link to the original repository>
 git checkout master
 git pull upstream master
 git checkout <BranchName>
 git merge master
 ```
 
-
-Ga naar de files kijken waar de verschillen zitten, en verwijder de HEAD en tekens waar nodig.
+Compare the files and check for differences. Delete the HEAD and markers where necessary.
 
 ```
 git add <filename>
