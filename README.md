@@ -9,8 +9,20 @@ Ga naar de fork in je eigen github profiel
 Kopieer de link van de Fork
 Git clone <link van fork>
 Git checkout -b <BranchName>
-Git add -A
+Git add <filename>
 Git commit -m "Voeg hier je commentaar toe"
+
+Indien je een merge conflict hebt :
+(zorg dat de usptream correct is) git remote add upstream <link naar originele repo>
+git checkout master
+git pull upstream master
+git checkout <BranchName>
+git merge master
+
+Ga naar de files kijken waar de verschillen zitten, en verwijder de HEAD en tekens waar nodig.
+
+git add <filename>
+git push origin <BranchName>
 
 How to change your bash profile:
 
